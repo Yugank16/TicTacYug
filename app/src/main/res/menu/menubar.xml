@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="New Game"
+        android:id="@+id/newgame"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Change BoardSize"
+        android:id="@+id/change_order"
+        >
+        <menu>
+            <item
+                android:title="3"
+                android:id="@+id/size3"
+                />
+            <item
+                android:title="4"
+                android:id="@+id/size4"
+                />
+            <item
+                android:title="5"
+                android:id="@+id/size5"
+                />
+        </menu>
+        </item>
+
+    <item
+        android:title="Help"
+        android:id="@+id/help"
+        />
+    <item
+        android:title="Quit Game"
+        android:id="@+id/quit"
+        />
+
+
+</menu>

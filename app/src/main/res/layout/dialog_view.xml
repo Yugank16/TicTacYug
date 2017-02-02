@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:id="@+id/player1"
+        android:background="@drawable/texture"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:hint="player1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:id="@+id/player2"
+        android:background="@drawable/texture"
+        android:layout_below="@+id/player1"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignStart="@+id/player1"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="30dp"
+        android:hint="Player2"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/circle"
+        android:id="@+id/circle"
+        android:layout_alignTop="@+id/player2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/metallogo"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cross"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <Button
+        android:text="Play"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/play"
+        android:background="@drawable/text1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/player2"
+        android:layout_alignEnd="@+id/player2"
+        android:layout_marginBottom="19dp"
+        android:textColor="#FF0000"/>
+</RelativeLayout>
